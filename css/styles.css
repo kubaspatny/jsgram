@@ -12,3 +12,20 @@ main {
 nav .button-collapse {
   padding-left: 10px;
 }
+
+.controls {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
