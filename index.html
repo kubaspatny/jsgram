@@ -20,12 +20,12 @@
           <a href="#" id="logo" class="brand-logo">JSGram</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#" title="Crop"><i class="material-icons">crop</i></a></li>
-            <li><a href="#" title="Brightness and Contrast"><i class="material-icons">brightness_medium</i></a></li>
-            <li><a href="#" title="Filters"><i class="material-icons">filter_hdr</i></a></li>
-            <li><a href="#" title="Tuning"><i class="material-icons">tune</i></a></li>
-            <li><a href="#" title="Save"><i class="material-icons">save</i></a></li>
-            <li><a href="#" title="Discard"><i class="material-icons">delete</i></a></li>
+            <li><a href="#" class="tooltipped" data-tooltip="Crop"><i class="material-icons">crop</i></a></li>
+            <li><a href="#" class="tooltipped" data-tooltip="Brightness and Contrast"><i class="material-icons">brightness_medium</i></a></li>
+            <li><a href="#" class="tooltipped" data-tooltip="Filters"><i class="material-icons">filter_hdr</i></a></li>
+            <li><a href="#" class="tooltipped" data-tooltip="Tuning"><i class="material-icons">tune</i></a></li>
+            <li><a href="#" class="tooltipped" data-tooltip="Save"><i class="material-icons">save</i></a></li>
+            <li><a href="#" class="tooltipped" data-tooltip="Discard"><i class="material-icons">delete</i></a></li>
           </ul>
 
           <ul class="side-nav" id="mobile-demo">
@@ -50,6 +50,7 @@
       $( document ).ready(function() {
           console.log( "document loaded" );
           $(".button-collapse").sideNav();
+          $('.tooltipped').tooltip({delay: 300});
       });
     </script>
 	</body>
