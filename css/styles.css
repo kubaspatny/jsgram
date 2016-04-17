@@ -1,0 +1,14 @@
+/* Note: This may cause issues in Internet Explorer which has weak support for flexbox. */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav .button-collapse {
+  padding-left: 10px;
+}
