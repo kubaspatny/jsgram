@@ -1,12 +1,21 @@
+html {
+  height: 100%;
+}
+
 /* Note: This may cause issues in Internet Explorer which has weak support for flexbox. */
 body {
+    height: 100%;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
 }
 
 main {
+    display: flex;
     flex: 1 0 auto;
+}
+
+canvas {
+  width: 100%;
 }
 
 nav .button-collapse {
@@ -28,4 +37,8 @@ nav .button-collapse {
 
 .m-b-10 {
     margin-bottom: 10px;
+}
+
+.t {
+    transform: translate(0px,-100px);
 }

@@ -44,7 +44,7 @@
       </nav>
     </header>
 
-    <main class="blue" id="canvas-wrapper">
+    <main id="canvas-wrapper">
         <canvas></canvas>
     </main>
 
@@ -59,12 +59,11 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
       $( document ).ready(function() {
-          console.log( "document loaded" );
           $(".button-collapse").sideNav();
           $('.tooltipped').tooltip({delay: 300});
       });
 
-      var renderer = new CanvasRenderer();
+      var renderer = new CanvasRenderer(false);
       var controls = new ControlsController();
       controls._setOnResizeListener(renderer);
     </script>
